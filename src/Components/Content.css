@@ -1,0 +1,124 @@
+.space{
+    height: 60px;
+}
+.paragraph{
+    line-height: 1.5;
+    font-weight: 200;
+    margin-top: 1rem;
+    text-align: justify;
+}
+.projects{
+    margin-top: 30px;
+}
+.project-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    font-family: var(--font-inter), serif;
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s ease-in 0s;
+    cursor: pointer;
+}
+.link:hover{
+    color: var(--color-header);
+}
+.card{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid hsl(0, 0%, 30%);
+    border-radius: 10px;
+    font-family: var(--font-inter), serif;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-header);
+}
+.card h4{
+    color: var(--color-text);
+}
+.card p{
+    font-weight: 200;
+    padding-top: 0.2rem;
+}
+.experience{
+    margin-top: 30px;
+}
+.work{
+    margin-top: 1rem;
+}
+.role{
+    margin-top: 0.25rem;
+    font-family: var(--font-inter), serif;
+    font-size: 0.87rem;
+    opacity: 0.8;
+}
+.experience-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.timeline{
+    display: flex;
+    justify-content: space-between;
+}
+.connect{
+    margin-top: 30px;
+}
+.socials{
+    display: flex;
+    list-style: none;
+    padding-top: 0.5rem;
+}
+.socials li{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    cursor: pointer;
+    transition: color 200ms ease-in 0s;
+}
+.socials li:hover{
+    color: var(--color-header);
+}
+.socials li:first-child{
+    padding-right: 0.5rem;
+}
+.socials li:nth-child(2), li:nth-child(3){
+    padding: 0 0.5rem;
+}
+.button{
+    display: flex;
+    margin-top: 20px;
+    justify-content: end;
+}
+.button button{
+    padding: 0.5rem 0.8rem;
+    background-color: #1c1917;
+    border: 1px solid hsl(0, 0%, 30%);
+    border-radius: 5px;
+    color: var(--color-text);
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-header);
+}
+
+/*animations*/
+@keyframes fadeIn {
+    0%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.animate-1{
+    animation: fadeIn 500ms ease-in 100ms forwards;
+}
+.animate-2{
+    animation: fadeIn 500ms ease-in 200ms forwards;
+}

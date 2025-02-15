@@ -1,0 +1,40 @@
+.header{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-family: var(--font-inter), serif;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.header-content h4{
+    color: var(--color-text);
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 200ms ease-in 0s;
+}
+.header-content h4:hover{
+    color: var(--color-header);
+}
+.navigation{
+    list-style: none;
+    display: flex;
+    font-weight: 300;
+}
+.navigation li{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+.navigation a{
+    transition: color 200ms ease-in 0s;
+}
+.navigation a:hover{
+    color: var(--color-header);
+}

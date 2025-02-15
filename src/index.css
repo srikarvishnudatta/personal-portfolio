@@ -1,0 +1,41 @@
+:root{
+    --font-lora: "Lora", serif;
+    --font-inter: "Inter", serif;
+
+    --color-text: hsl(0, 0%, 80%);
+    --color-header: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1c1917;
+    font-family: var(--font-lora), serif;
+    color: var(--color-text);
+}
+h1,h2,h3,h4{
+    color: var(--color-header);
+    font-family: var(--font-inter), serif;
+}
+a{
+    color: var(--color-text);
+    text-decoration: none;
+}
+a:active, a:visited{
+    color: var(--color-text);
+}
+h4{
+    font-weight: 500;
+}
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+@media (width< 1000px) {
+   .content{
+       padding: 0 1rem;
+   }
+}
