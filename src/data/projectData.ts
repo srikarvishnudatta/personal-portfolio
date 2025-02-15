@@ -22,7 +22,7 @@ export const projects: Data[] = [
         id: 3,
         title:"Personal portfolio",
         description: "Personal portfolio built in react, css",
-        link:""
+        link:"https://github.com/srikarvishnudatta/personal-portfolio"
     },
     {
         id: 4,
