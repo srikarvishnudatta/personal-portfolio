@@ -1,0 +1,20 @@
+{
+    "summary": [
+        "I am a full-stack Java developer at Reach Networks Inc. (ReachGrid.com), primarily focusing on backend. My top skills include React.js, Python, Express and AWS but not limited.",
+        "I love building software and web apps. Working with Vue.js building some interesting projects, check them out in my Projects section."
+    ],
+    "work": [
+        {
+            "company": "Reach Networks Inc. (ReachGrid.com)",
+            "dates" :"June 2024 – Present ",
+            "title":"Java Full Stack Developer",
+            "summary": "Contract Software Developer contributing to an enterprise real-time fraud detection platform with a distributed team. Improved Apache Flink stream processing with event-time windowing and optimized Kafka for exactly-once semantics. Developed secure Spring Boot microservices with OAuth2 and JWT, and enhanced Hazelcast caching for faster fraud scoring. Strengthened Kubernetes deployments and CI/CD pipelines for scalability and zero-downtime releases. Implemented Prometheus/Grafana monitoring and extended dashboard analytics for stakeholder insights. Tech stack includes Java, Flink, Kafka, Spring Boot, Hazelcast, Docker, Kubernetes, and more."
+        },
+        {
+            "company":"Reach Networks Inc. (ReachGrid.com)",
+            "dates":"March 2021 – December 2022 ",
+            "title":"Full-Stack Developer",
+            "summary":"Worked as a Software Developer on an enterprise IAM platform supporting 15,000+ users. Built a responsive React-based admin UI and developed RESTful APIs with Node.js/Express.js for authentication, role management, and audit logging. Integrated LDAP/Active Directory for SSO and engineered Oracle-backed RBAC schemas with JWT-based session control. Automated LDAP sync reduced manual onboarding by 80%. Secured APIs with HTTPS, SQL injection prevention, and role-based access controls. Tech stack included React, Node.js, Oracle, LDAP, JWT, Docker, and Jenkins."
+        }
+    ]
+}

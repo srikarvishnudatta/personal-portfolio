@@ -8,9 +8,21 @@ export type Data = {
 export const projects: Data[] = [
     {
         id: 1,
-        title:"SplitsApp",
-        description: "An app to split expenses",
-        link:"https://github.com/srikarvishnudatta/SplitsApp"
+        title:"Tally Application",
+        description: "An app to track personal expenses and group expenses",
+        link:"https://github.com/srikarvishnudatta/tally-frontend"
+    },
+      {
+        id:4,
+        title:"Price tracker Pro",
+        description: "A SaaS application to track your spendings and market prices",
+        link:"https://github.com/srikarvishnudatta/price-tracker-pro"
+    },
+    {
+        id:5,
+        title:"Cookbase",
+        description:"An AI based Cookbook to store your recipes and explore new ideas",
+        link:"https://github.com/srikarvishnudatta/cookbase"
     },
     {
         id: 2,
@@ -23,17 +35,5 @@ export const projects: Data[] = [
         title:"Personal portfolio",
         description: "Personal portfolio built in react, css",
         link:"https://github.com/srikarvishnudatta/personal-portfolio"
-    },
-    {
-        id: 4,
-        title:"Demo cafe site",
-        description: "A cafe website prototype build using React, Stripe, CSS, Python",
-        link:""
-    },
-    {
-        id: 5,
-        title:"Blog Page and cookbook",
-        description: "My very own blog page and cookbook with custom editor",
-        link:"https://github.com/srikarvishnudatta/frontend"
-    },
+    }
 ];

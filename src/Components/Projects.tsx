@@ -9,8 +9,8 @@ function Projects(){
             opacity: 1,
             scale: 1,
             transition: {
-                delayChildren: 0.1, // Initial delay before starting children animation
-                staggerChildren: 0.2 // Delay between each child's animation
+                delayChildren: 0.1,
+                staggerChildren: 0.2 
             }
         }
     };
@@ -28,7 +28,7 @@ function Projects(){
         initial="hidden"
         animate="visible"
         className={"content"}>
-            <h4>Projects</h4>
+            <h2>Projects</h2>
         <div className={"projects"}>
             {projects.map((project) => {
                 return <motion.div variants={childVariants}>

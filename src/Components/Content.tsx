@@ -1,10 +1,9 @@
 import './Content.css'
-import {projects} from "../data/projectData.ts";
-import Card from "./Card.tsx";
 import WorkExperience from "./WorkExperience.tsx";
 import Link from "./Link.tsx";
 import {motion} from "framer-motion";
-import {NavLink} from "react-router-dom";
+import data from "../data/summary.json";
+import IconArrowUpRight from './Icon.tsx';
 
 function Content() {
     const containerVariants = {
@@ -13,8 +12,8 @@ function Content() {
             opacity: 1,
             scale: 1,
             transition: {
-                delayChildren: 0.1, // Initial delay before starting children animation
-                staggerChildren: 0.2 // Delay between each child's animation
+                delayChildren: 0.1, 
+                staggerChildren: 0.2
             }
         }
     };
@@ -36,25 +35,11 @@ function Content() {
             animate="visible"
         >
             <motion.div className="space" variants={childVariants}></motion.div>
-            <motion.h4 variants={childVariants}>Hi, I'm Srikar</motion.h4>
-            <motion.p className="paragraph" variants={childVariants}>
-                I am a full-stack developer specializing in Python, TypeScript, React, and Node.js. Currently, I'm working on a Splitwise clone. I love to cook, create new recipes, and write blogs about my life in Toronto.
-            </motion.p>
-            <motion.p className="paragraph" variants={childVariants}>
-                I have a Master's degree in Computer Science from Concordia University, Montreal, and a Bachelor's of Technology degree in Computer Science and Engineering from Vellore Institute of Technology.
-            </motion.p>
+            <motion.h2 variants={childVariants}>Hi, I'm Srikar 👋</motion.h2>
+            {data.summary.map((para, index) => <motion.p key={index} className="paragraph" variants={childVariants}>
+                {para}
+            </motion.p>)}
 
-            <motion.div className="projects" variants={childVariants}>
-                <div className="project-heading">
-                    <motion.h4 variants={childVariants}>Latest Projects</motion.h4>
-                    <motion.p className="link" variants={childVariants}><NavLink to={"/projects"}>See all projects</NavLink></motion.p>
-                </div>
-                {projects.slice(0, 2).map((project) => (
-                    <motion.div key={project.id} variants={childVariants}>
-                        <Card {...project} />
-                    </motion.div>
-                ))}
-            </motion.div>
 
             <motion.div className="experience" variants={childVariants}>
                 <WorkExperience />
@@ -66,9 +51,15 @@ function Content() {
                     If you want to get in touch with me about something or just to say hi, reach out on social media or send me an email.
                 </p>
                 <ul className="socials">
-                    <li><Link text="github" link="https://github.com/srikarvishnudatta/" /></li> /
-                    <li><Link text="linkedin" link="https://www.linkedin.com/in/srikar-akella01/" /></li> /
-                    <li><Link text="srikarakella28@gmail.com" link="mailto:srikarakella28@gmail.com" /></li>
+                    <li>    
+                        <IconArrowUpRight />
+                        <Link text="github" link="https://github.com/srikarvishnudatta/" /></li> /
+                    <li>
+                        <IconArrowUpRight />
+                        <Link text="linkedin" link="https://www.linkedin.com/in/srikar-akella01/" /></li> /
+                    <li>
+                        <IconArrowUpRight />
+                        <Link text="srikarakella28@gmail.com" link="mailto:srikarakella28@gmail.com" /></li>
                 </ul>
             </motion.div>
 
